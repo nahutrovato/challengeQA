@@ -18,4 +18,8 @@ describe('Edit elements test', () => {
         const newDescription = 'This is a new description text';
         EditItem.editDescription(newDescription);
     })
+
+    it('Update item click', () => {
+        EditItem.updateItemClick();
+    })
 })

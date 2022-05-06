@@ -3,7 +3,8 @@ import CreateItem from "../pages/createItem";
 class EditItem{
 
     elements = {
-        btnEdit: () => cy.get('button[ng-click="strangerlist.setCurrentItem(item)"]')
+        btnEdit: () => cy.get('button[ng-click="strangerlist.setCurrentItem(item)"]'),
+        btnUpdateItem: () => cy.get('.ng-scope > .pull-right')
     }
 
     editElementOfList(){
@@ -16,6 +17,10 @@ class EditItem{
 
     editDescription(description){
         CreateItem.enterDescription(description)
+    }
+
+    updateItemClick(){
+        this.elements.btnUpdateItem().click();
     }
 
 }
