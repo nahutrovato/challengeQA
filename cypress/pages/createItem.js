@@ -1,4 +1,4 @@
-class createItem{
+class CreateItem{
 
     elements = {
         inputImage: () => cy.get('#inputImage'),
@@ -19,4 +19,4 @@ class createItem{
     }
 }
 
-module.exports = new createItem();
+module.exports = new CreateItem();

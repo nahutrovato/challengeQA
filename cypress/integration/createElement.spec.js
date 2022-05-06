@@ -1,4 +1,4 @@
-import createItem from '../pages/createItemt';
+import CreateItem from '../pages/createItem';
 
 describe('Create elements tests', () => {
 
@@ -8,16 +8,16 @@ describe('Create elements tests', () => {
     
     it('Upload image test', () => {
         const imagePath = 'images/strangerThings.jpg';
-        createItem.uploadImage(imagePath);
+        CreateItem.uploadImage(imagePath);
     })
 
     it('Enter description box', () => {
-        const description = 'I upload a stranger Things image';
-        createItem.enterDescription(description);
+        const description = 'The team enter to the darkness';
+        CreateItem.enterDescription(description);
     })
     
     it('Create item', () => {
-        createItem.btnCreateItem();
+        CreateItem.btnCreateItem();
     })
 
 
