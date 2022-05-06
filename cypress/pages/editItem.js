@@ -1,16 +1,21 @@
+import CreateItem from "../pages/createItem";
+
 class EditItem{
 
     elements = {
-        lastElement: () => cy.get('ul li').last(),
         btnEdit: () => cy.get('button[ng-click="strangerlist.setCurrentItem(item)"]')
     }
 
-    lastElementOfList(){
-        this.elements.lastElement();
+    editElementOfList(){
+        this.elements.btnEdit().last().click();
     }
 
-    editElementOfList(){
-        this.elements.btnEdit().click();
+    clearDescription(){
+        CreateItem.elements.textBox().clear();
+    }
+
+    editDescription(description){
+        CreateItem.enterDescription(description)
     }
 
 }
