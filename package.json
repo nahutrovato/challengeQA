@@ -17,6 +17,7 @@
   "author": "Nahuel Trovato",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^9.6.0"
+    "cypress": "^9.6.0",
+    "cypress-file-upload": "^5.0.8"
   }
 }
