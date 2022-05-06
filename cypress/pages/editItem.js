@@ -8,7 +8,7 @@ class EditItem{
     }
 
     editElementOfList(){
-        this.elements.btnEdit().last().click();
+        this.elements.btnEdit().first().click();
     }
 
     clearDescription(){
