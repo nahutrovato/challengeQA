@@ -6,16 +6,16 @@ describe('Edit elements test', () => {
         cy.visit('/')
     })
     
-    it('Click the last element in the list', () => {
-       EditItem.editElementOfList();
-    })
+    it('Click the first element in the list', () => {
+        EditItem.firstElementOfList().click();
+     })
 
     it('Clear old description', () => {
-        EditItem.clearDescription();
+        EditItem.clearDescription().clear();;
     })
 
     it('Edit description text', () =>{
-        const newDescription = 'This is a new description text';
+        const newDescription = 'This is a new description';
         EditItem.editDescription(newDescription);
     })
 

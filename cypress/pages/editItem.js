@@ -7,21 +7,16 @@ class EditItem{
         btnUpdateItem: () => cy.get('.ng-scope > .pull-right')
     }
 
-    editElementOfList(){
-        this.elements.btnEdit().first().click();
+    firstElementOfList(){
+        return this.elements.btnEdit().first();
     }
 
-    clearDescription(){
-        CreateItem.elements.textBox().clear();
-    }
+    clearDescription = () => CreateItem.elements.textBox();
 
-    editDescription(description){
-        CreateItem.enterDescription(description)
-    }
+    editDescription = (description) => CreateItem.enterDescription(description);
 
-    updateItemClick(){
-        this.elements.btnUpdateItem().click();
-    }
+    updateItemClick = () => this.elements.btnUpdateItem().click();
+    
 
 }
 

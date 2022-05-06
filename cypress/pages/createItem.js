@@ -6,17 +6,12 @@ class CreateItem{
         btnCreateItem: () => cy.get('.ng-scope > .btn')
     }
 
-    uploadImage(imagePath){
-        this.elements.inputImage().attachFile(imagePath);
-    }
+    uploadImage = (imagePath) => this.elements.inputImage().attachFile(imagePath);
 
-    enterDescription(description){
-        this.elements.textBox().type(description);
-    }
+    enterDescription = (description) => this.elements.textBox().type(description);
 
-    btnCreateItem(){
-        this.elements.btnCreateItem().click();
-    }
+    btnCreateItem = () => this.elements.btnCreateItem().click();
+    
 }
 
 module.exports = new CreateItem();
